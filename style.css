@@ -1,0 +1,292 @@
+body {
+  font-family: Helevetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #e5e5e5;
+}
+
+header {
+  background-color: #d4ff8e;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  min-height: 50px;
+  margin: 0;
+}
+
+.banner {
+  background-color: #d4ff8e;
+  color: #303030;
+  display: block;
+}
+
+.banner h1 {
+  padding-left: 1rem;
+  font-family: Georgia, serif;
+  text-shadow: 2px 2px 4px #303030;
+}
+
+.banner h1 a {
+  color: unset;
+  text-decoration: none;
+}
+
+
+header button.bars {
+  background-color: transparent;
+  border: none;
+  color: white;
+  display: none;
+  padding: 14px;
+  font-size: 25px;
+  text-align: right;
+}
+
+header button {
+  float: right;
+  display: block;
+}
+
+header nav {
+  display: flex;
+}
+
+header nav a {
+  color: #303030;
+  margin-right: 1rem;
+  text-decoration: none;
+  padding: 14px 16px;
+  font-size: 19px;
+}
+
+.container {
+  display: block;
+  flex: 1;
+  padding: 20px;
+  color: #303030;
+  background-color: white;
+}
+
+.container .separator {
+  display: block;
+  background-color: darkgreen;
+  width: 40px;
+  height: 3px;
+  margin-top: 0.83em;
+
+}
+
+.container h2 {
+  font-family: Georgia, serif;
+  text-shadow: 2px 2px 4px #303030;
+  margin-top: 0.4em;
+}
+
+.container h3 {
+  font-size: 22px;
+}
+
+.container h4 {
+  font-size: 18px;
+}
+
+.container a {
+  color: darkblue;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.container p, li {
+  line-height: 1.5;
+}
+
+.container li {
+  margin: 0.83rem 0;
+}
+
+.container hr {
+  margin: 2.4rem 0;
+}
+
+img {
+  display: block;
+  max-width: 1000px;
+  width: 100%;
+  height: auto;
+  margin: 32px auto;
+}
+
+.fittings {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  justify-content: space-evenly;
+}
+
+.fittings div {
+  flex: 33%;
+  min-width: 200px;
+}
+
+.fittings div p {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.calendar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.calendar .twf-wrapper {
+  width: 830px;
+}
+
+.gmap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gmap iframe {
+  border: 0;
+  max-width: 1000px;
+  width: 100%;
+  margin: 0px auto;
+  height: 600px;
+}
+
+.pswp-gallery img {
+  display: unset;
+  max-width: unset;
+  width: unset;
+  height: unset;
+  margin: unset;
+}
+
+.contact-form {
+  margin: 80px 0 20px 0;
+}
+
+.contact-form input[type=text], input[type=email], input[type=date], select, textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border: 2px solid #e5e5e5;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.contact-form label {
+  padding: 12px 12px 12px 0;
+}
+
+.contact-form textarea {
+  height: 150px;
+}
+
+.contact-form input[type=submit] {
+  padding: 12px 20px;
+  background-color: #d4ff8e;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+footer {
+  background-color: #d4ff8e;
+  color: gray;
+  padding: 1rem;
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+footer a {
+  color: gray;
+  text-decoration: none; 
+}
+
+@media screen and (min-width: 1600px) {
+  header,footer,.banner {
+    align-self: center;
+    width: 1600px;
+    max-width: 1600px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    align-self: center;
+    background-color: #e5e5e5;
+    width: 1200px;
+    max-width: 1200px;
+    padding: 10px 10px 0 10px;
+  }
+
+  .container section {
+    background-color: white;
+    padding: 2px 20px 20px 20px;
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .calendar .twf-wrapper {
+    width: 620px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header button.bars {
+    display: block;
+    position: absolute;
+    top: 4.8rem;
+    right: 0.2rem;
+  }
+
+  header nav {
+    display: none;
+  }
+
+  header nav.active {
+    display: block;
+    top: 25px;
+    background-color: gray;
+    width: 100%;
+
+  }
+
+  header nav.active a {
+    color: white;
+    display: block;
+    text-align: left;
+  }
+
+  .gmap iframe {
+    height: 450px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .calendar .twf-wrapper {
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 482px) {
+  header button.bars {
+    display: block;
+    position: absolute;
+    top: 6.9rem;
+    right: 0.2rem;
+  }
+
+  .gmap iframe {
+    height: 320px;
+  }
+}
+
