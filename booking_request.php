@@ -70,7 +70,7 @@ Name: {$_POST['name']}
 Email: {$_POST['email']}
 Ankunft: {$_POST['arrival_date']}
 Abreise: {$_POST['departure_date']}
-Anzahl Personen: {$_POST['number_of_persons']} (davon Kinder: {$_POST['number_of_children']})
+Anzahl Personen: {$_POST['number_of_adults']} (davon Kinder: {$_POST['number_of_children']})
 
 Mitteilung: {$_POST['message']}
 EOT;
